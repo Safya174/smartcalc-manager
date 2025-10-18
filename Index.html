@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Css/style.css">
+    <title>SmartCalc Manager</title>
+</head>
+<body class="bg-body-tertiary " >
+  
+  <div class="container bg-body-tertiary vh-100">
+    <div class="row">
+    <div class="col">
+        <h1 class="text-center mt-3 fs-3">SmartCalc Manager</h1>
+    </div>
+   </div>
+   
+  
+   <div class="row d-flex justify-content-center ">
+
+    <div class="col-md-6 col-12">
+      <div class="display  w-100">
+        <table class="table table-striped">
+         <thead>
+          <tr>
+            <th >Exepration</th>
+            <th>Result</th>
+            <th>Time</th>
+            <th>orders</th>
+
+          </tr>
+
+
+         </thead>
+         <tbody id="Save">
+          
+        
+         </tbody>
+      </table>
+      </div>
+    </div>
+
+
+   <div class="col-12 col-md-6 col-lg-6">
+    <div class="Calc w-75 bg-white p-2">
+     <div class="Scren bg-black d-flex justify-content-end align-items-end" >
+        <h5 class="mb-5 ms-0 me-0" id="Screen" ></h5>
+        <p class="text-white fw-bold fs-4 me-2  " id="Result">0</p>
+     </div>
+     <div class="row mt-3 text-center g-2">
+        <div class="col-3 text-center">
+          <button type="button" class="btn pt-2 pb-2 btn-primary ps-5 pe-5 " onclick="addNumber('÷')">÷</button>
+        </div>
+         <div class="col-3 text-center">
+          <button type="button" class="rounded-3 pt-2 pb-2 border-0 ps-5 pe-5"onclick="addNumber('%')" >%</button>
+        </div>
+         <div class="col-3 text-center">
+          <button type="button" class="rounded-3 pt-2 pb-2 border-0 ps-5 pe-5 bg" onclick="addNumber('⌫')"  >⌫</button>
+        </div>
+         <div class="col-3 text-center">
+          <button type="button" class="btn ps-5 pe-5 pt-2 pb-2 btn-danger" onclick="addNumber('AC')" >AC</button>
+        </div>
+         <div class="col-3 text-center">
+          <button type="button" class="btn pt-2 pb-2 btn-primary ps-5 pe-5 " onclick="addNumber('x')" >x</button>
+        </div>
+         <div class="col-3 text-center">
+          <button type="button" class="rounded-3 pt-2 pb-2 border-0 ps-5 pe-5" onclick="addNumber(9)" >9</button>
+        </div>
+         <div class="col-3 text-center">
+          <button type="button" class="rounded-3 pt-2 pb-2 border-0 ps-5 pe-5 bg"onclick="addNumber(8)" >8</button>
+        </div>
+         <div class="col-3 text-center">
+          <button type="button" class="rounded-3 pt-2 pb-2 border-0 ps-5 pe-5" onclick="addNumber(7)"  >7</button>
+        </div>
+       <div class="col-3 text-center">
+          <button type="button" class="btn pt-2 pb-2 btn-primary ps-5 pe-5 " onclick="addNumber('-')"  >-</button>
+        </div>
+        <div class="col-3 text-center">
+          <button type="button" class="rounded-3 pt-2 pb-2 border-0 ps-5 pe-5" onclick="addNumber(6)"  >6</button>
+        </div>
+        <div class="col-3 text-center">
+          <button type="button" class="rounded-3 pt-2 pb-2 border-0 ps-5 pe-5" onclick="addNumber(5)" >5</button>
+        </div>
+        <div class="col-3 text-center">
+          <button type="button" class="rounded-3 pt-2 pb-2 border-0 ps-5 pe-5" onclick="addNumber(4)"  >4</button>
+        </div>
+        <div class="col-3 text-center">
+          <button type="button" class="btn pt-2 pb-2 btn-primary ps-5 pe-5 " onclick="addNumber('+')" >+</button>
+        </div>
+        <div class="col-3 text-center">
+          <button type="button" class="rounded-3 pt-2 pb-2 border-0 ps-5 pe-5" onclick="addNumber(3)"  >3</button>
+        </div>
+        <div class="col-3 text-center">
+          <button type="button" class="rounded-3 pt-2 pb-2 border-0 ps-5 pe-5" onclick="addNumber(2)"  >2</button>
+        </div>
+        <div class="col-3 text-center">
+          <button type="button" class="rounded-3 pt-2 pb-2 border-0 ps-5 pe-5" onclick="addNumber(1)"  >1</button>
+        </div>
+        <div class="col-3 text-center">
+          <button type="button" class="btn pt-2 pb-2 btn-success ps-5 pe-5 " onclick="addNumber('=')" >=</button>
+        </div>
+         <div class="col-3 text-center">
+          <button type="button" class="rounded-3 pt-2 pb-2 border-0 ps-5 pe-5"onclick="addNumber('.')"  >.</button>
+        </div>
+         <div class="col-6 text-center">
+          <button type="button" class="rounded-3 pt-2 pb-2 border-0 ps-5 pe-5"onclick="addNumber(0)"  >0</button>
+        </div>
+     </div>
+
+    </div>
+   </div>
+   </div>
+  </div>
+  <script src="./js/bootstrap.bundle.min.js"> </script>
+  <script src="./js/main.js"></script>
+</body>
+</html>
